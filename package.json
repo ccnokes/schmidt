@@ -2,6 +2,10 @@
   "name": "schmidt",
   "version": "1.0.0",
   "description": "Fast and small event emitter with optionally importable utility functions for more advanced functionality. TS friendly too.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccnokes/schmidt"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
