@@ -1,0 +1,31 @@
+{
+  "name": "schmidt",
+  "version": "1.0.0",
+  "description": "Fast and small event emitter with optionally importable utility functions for more advanced functionality. TS friendly too.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm test",
+    "test": "jest --config=jest.config.json",
+    "test-perf": "tsc && node tests/perf",
+    "get-size": "tsc && uglifyjs --compress --mangle -- dist/index.js | gzip -9 | wc -c"
+  },
+  "keywords": [
+    "events",
+    "eventemitter",
+    "pubsub"
+  ],
+  "author": "Cameron Nokes",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^23.0.0",
+    "benchmark": "^2.1.4",
+    "eventemitter3": "^3.1.0",
+    "jest": "^23.1.0",
+    "mitt": "^1.1.3",
+    "ts-jest": "^22.4.6",
+    "typescript": "^2.9.1",
+    "uglify-js": "^3.4.0"
+  }
+}
